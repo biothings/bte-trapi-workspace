@@ -34,6 +34,13 @@ ingress:
     alb.ingress.kubernetes.io/healthcheck-path: '/'
   host: bte.ci.transltr.io
 
+# these are the parametrs we use for redis cluster
+# env:
+  # REDIS_HOST_VALUE:
+  # REDIS_PORT_VALUE: 
+  # REDIS_PASSWORD_VALUE: 
+  # REDIS_TLS_ENABLED_VALUE:
+      
 # With the following two sections, we can restrict the deployment on and only on the specific node
 # toleration to node taint such that this deployment can be scheduled on the tainted node while others without the toleration can not
 tolerations: 

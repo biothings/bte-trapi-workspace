@@ -19,20 +19,19 @@ spec:
         - name: {{ .Chart.Name }}
           image: "{{ .Values.image.repository }}:{{ .Values.image.tag | default .Chart.AppVersion }}"
           imagePullPolicy: {{ .Values.image.pullPolicy }}
-          command:
-            - "/bin/sh"
-            - "/scripts/start_app.sh"
           ports:
             - name: http
               containerPort: 3000
               protocol: TCP
-          volumeMounts:
-            - name: {{ include "bte.fullname" . }}-configs-volume
-              mountPath: /configs
-            - name: {{ include "bte.fullname" . }}-env-volume
-              mountPath: /env
-            - name: {{ include "bte.fullname" . }}-scripts-volume
-              mountPath: /scripts
+          env:
+            - name: REDIS_HOST
+              value: "{{ .Values.env.REDIS_HOST_VALUE }}"
+            - name: REDIS_PORT
+              value: "{{ .Values.env.REDIS_PORT_VALUE }}"
+            - name: REDIS_PASSWORD
+              value: "{{ .Values.env.REDIS_PASSWORD_VALUE }}"
+            - name: REDIS_TLS_ENABLED
+              value: "{{ .Values.env.REDIS_TLS_VALUE }}"
           livenessProbe:
             httpGet:
               path: /
@@ -54,15 +53,3 @@ spec:
           secret:
             secretName: {{ include "bte.fullname" . }}-secret
             defaultMode: 0400
-        - name: {{ include "bte.fullname" . }}-scripts-volume
-          configMap:
-            name: {{ include "bte.fullname" . }}-scripts
-            defaultMode: 0755
-        - name: {{ include "bte.fullname" . }}-configs-volume
-          configMap:
-            name: {{ include "bte.fullname" . }}-configs
-            defaultMode: 0755
-        - name: {{ include "bte.fullname" . }}-env-volume
-          configMap:
-            name: {{ include "bte.fullname" . }}-env
-            defaultMode: 0755
