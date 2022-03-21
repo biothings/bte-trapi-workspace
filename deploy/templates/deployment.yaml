@@ -31,7 +31,7 @@ spec:
             - name: REDIS_PASSWORD
               value: "{{ .Values.env.REDIS_PASSWORD_VALUE }}"
             - name: REDIS_TLS_ENABLED
-              value: "{{ .Values.env.REDIS_TLS_VALUE }}"
+              value: "{{ .Values.env.REDIS_TLS_ENABLED_VALUE }}"
           livenessProbe:
             httpGet:
               path: /
