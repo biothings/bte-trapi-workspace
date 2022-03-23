@@ -6,5 +6,7 @@ echo `git ls-remote --get-url` `git rev-parse --short HEAD` `git rev-parse HEAD`
 
 while read -r url module_dir
 do
+    cd "$module_dir"
     echo `git ls-remote --get-url` `git rev-parse --short HEAD` `git rev-parse HEAD`
+    cd $current_folder
 done < scripts/packages.txt
