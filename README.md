@@ -33,6 +33,10 @@ npm i
 * start a dev server
 
   ```
+  npm start
+  ```
+  or
+  ```
   npm run debug --workspace=@biothings-explorer/bte-trapi
   ```
 
@@ -40,14 +44,27 @@ Now when you save your code change, the dev server should restart to reflect the
 
 ### Developing with redis enabled
 
-* install redis  
+#### Easy Method:
 
-  macOS: 
+* pull latest docker image
+  ```
+  docker pull redis:latest
+  ```
+* start server in debug mode with redis enabled:
+  ```
+  npm start redis
+  ```
+
+### Alternate method
+
+* install redis
+
+  macOS:
   ```
   brew install redis
   ```
 
-* start redis  
+* start redis
 
   macOS:
   ```
@@ -58,7 +75,7 @@ Now when you save your code change, the dev server should restart to reflect the
   sudo service redis-server start
   ```
 
-* start dev server with redis enabled  
+* start dev server with redis enabled
 
   ```
   REDIS_HOST=localhost REDIS_PORT=6379  REQUEST_TIMEOUT=1200 npm run debug --workspace=@biothings-explorer/bte-trapi
