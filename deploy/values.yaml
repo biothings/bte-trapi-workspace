@@ -1,9 +1,9 @@
 # Default values for bte.
 
 deployment:
-  strategyType: 'Recreate'
+  strategyType: Recreate
   replicaCount: 1
-  
+
 image:
   repository: 853771734544.dkr.ecr.us-east-1.amazonaws.com/translator-bte
   pullPolicy: IfNotPresent
