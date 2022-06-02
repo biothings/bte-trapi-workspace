@@ -1,7 +1,7 @@
 # Default values for bte.
 
 deployment:
-  strategyType: Recreate
+  type: Recreate
   replicaCount: 1
 
 image:

@@ -5,7 +5,7 @@ metadata:
   labels:
     {{- include "bte.labels" . | nindent 4 }}
 spec:
-  strategy: {{ .Values.deployment.strategyType}}
+  strategy: {{ .Values.deployment.type}}
   replicas: {{ .Values.deployment.replicaCount }}
   selector:
     matchLabels:
