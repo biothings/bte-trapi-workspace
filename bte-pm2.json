@@ -28,7 +28,8 @@
             },
             "env_prodci": {
                 "NODE_ENV": "production",
-                "REDIS_TLS_ENABLED": true
+                "REDIS_TLS_ENABLED": true,
+                "REDIS_CLUSTER": true
             },
             "env_dev": {
                 "DEBUG": "biomedical-id-resolver,bte*",
