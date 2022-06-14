@@ -42,7 +42,7 @@ env:
   # REDIS_PORT_VALUE: 
   # REDIS_PASSWORD_VALUE: 
   REDIS_TLS_ENABLED_VALUE: true
-  REDIS_CLUSTER: true
+  REDIS_CLUSTER_VALUE: true
 
       
 # With the following two sections, we can restrict the deployment on and only on the specific node
