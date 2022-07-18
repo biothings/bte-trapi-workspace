@@ -104,5 +104,11 @@ dist
 .tern-port
 
 packages
-.vscode/
 .idea/
+
+# .vscode generally
+.vscode/*
+
+# Explicit allow .vscode launch.json/tasks.json
+!.vscode/launch.json
+!.vscode/tasks.json
