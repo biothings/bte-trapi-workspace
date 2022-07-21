@@ -6,7 +6,8 @@
     "./packages/@biothings-explorer/call-apis",
     "./packages/@biothings-explorer/query_graph_handler",
     "./packages/@biothings-explorer/smartapi-kg",
-    "./packages/@biothings-explorer/bte-trapi"
+    "./packages/@biothings-explorer/bte-trapi",
+    "./packages/@biothings-explorer/node-expansion"
   ],
   "npmClient": "npm",
   "version": "independent",
