@@ -21,6 +21,9 @@
     },
     {
       "path": "packages/@biothings-explorer/bte-trapi"
+    },
+    {
+      "path": "packages/@biothings-explorer/node-expansion"
     }
   ]
 }

@@ -60,6 +60,7 @@
     "./packages/@biothings-explorer/smartapi-kg",
     "./packages/biolink-model",
     "./packages/biomedical_id_resolver",
-    "./packages/@biothings-explorer/bte-trapi"
+    "./packages/@biothings-explorer/bte-trapi",
+    "./packages/@biothings-explorer/node-expansion"
   ]
 }

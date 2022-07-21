@@ -28,6 +28,10 @@ cd $current_folder
 
 cd "./packages/@biothings-explorer/bte-trapi"
 ln -s ../../../scripts/tsconfig.json_bte-trapi ./tsconfig.json
+cd $current_folder
+
+cd "./packages/@biothings-explorer/node-expansion"
+ln -s ../../../scripts/tsconfig.json_node-expansion ./tsconfig.json
 # # no need to do this after we commit the package name change to the repo
 # if [ "$(uname)" = "Darwin" ]; then
 #     # sed on mac has a workaround to make it work
