@@ -2,12 +2,12 @@
 > get_rev
 > ./scripts/get_rev.sh
 
-# Generated from "npm run get_rev" on  Wed Jul 13 16:08:01 EDT 2022
-https://github.com/biothings/bte-trapi-workspace.git 467ab2c 467ab2c8d72e3b957c829357d88b646d403410ae
-https://github.com/biothings/BioThings_Explorer_TRAPI.git 3b781da 3b781da814605de6a271a4c0885607f7c585ee3e
-https://github.com/biothings/bte_trapi_query_graph_handler.git 136941b 136941b1d9264ef61576440ba6b67ef3a28c062d
+# Generated from "npm run get_rev" on  Fri Jul 22 12:31:25 EDT 2022
+https://github.com/biothings/bte-trapi-workspace.git 2a037b9 2a037b9ba3e92550aa2f8f170fc685618732ddea
+https://github.com/biothings/BioThings_Explorer_TRAPI.git 6794da0 6794da012a966230d1030cb39f7b635a96053f25
+https://github.com/biothings/bte_trapi_query_graph_handler.git 924c965 924c96582d580835b8b81fec77f1f1b7a953b858
 https://github.com/biothings/biolink-model.js.git 697532e 697532e209da9fd457a33ea3dd17aa2116085bd9
-https://github.com/biothings/biomedical_id_resolver.js.git e659dd5 e659dd595ce55efa23370b931e58f5c9fa0761b7
-https://github.com/biothings/smartapi-kg.js.git 1c66164 1c66164a9c8147af0df40472ebfa3b562ea626fc
-https://github.com/biothings/call-apis.js.git 35d42ee 35d42ee7ae868ada369a203d64cc0af6c9e3f02a
-https://github.com/biothings/api-respone-transform.js.git 90d88a2 90d88a24f125e3775de286b5d2873bccfb09d3db
+https://github.com/biothings/biomedical_id_resolver.js.git a159b69 a159b696b630bda58bdab35be9340286bc03ea2a
+https://github.com/biothings/smartapi-kg.js.git 326f02c 326f02c80a2aae780681aa0d6eca25364ba9959c
+https://github.com/biothings/call-apis.js.git 937b6b4 937b6b4c65a54ba1155ac3584a1b32b1410e2034
+https://github.com/biothings/api-respone-transform.js.git 8d244f0 8d244f081939082236a5b2e09ba274ab0035e383
