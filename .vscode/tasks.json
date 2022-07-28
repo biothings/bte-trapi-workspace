@@ -19,7 +19,7 @@
     {
       "label": "start redis",
       "type": "shell",
-      "dependsOn": ["stop redis", "stop redis cluster"],
+      "dependsOn": ["stop redis"],
       "command": "docker run --name test-redis -p 6379:6379 -d --hostname=redis:latest redis redis-server",
       // "command": "echo fakestart",
       "presentation": {
@@ -34,7 +34,7 @@
     {
       "label": "start redis cluster",
       "type": "shell",
-      "dependsOn": ["stop redis cluster", "stop redis"],
+      "dependsOn": ["stop redis"],
       "command": "docker run -e 'IP=0.0.0.0' -p 6379-6384:6379-6384 -e INITIAL_PORT=6379 -d --name test-redis-cluster grokzen/redis-cluster:latest",
       // "command": "echo fakestart",
       "presentation": {
