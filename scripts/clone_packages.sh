@@ -17,8 +17,9 @@ fi
 # git@github.com:biothings/BioThings_Explorer_TRAPI.git
 
 set -x
-while read -r url module_dir
+while read line || [ -n "$line" ];
 do
+    read -r url module_dir <<< $line
     git clone $base_url"$url" "$module_dir"
 done < scripts/packages.txt
 

@@ -1,7 +1,8 @@
 current_folder=`pwd`
 
-while read -r url module_dir
+while read line || [ -n "$line" ];
 do
+    read -r url module_dir <<< $line
     cd "$module_dir"
     echo
     basename "$module_dir"
