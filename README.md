@@ -18,8 +18,8 @@ cd bte-trapi-workspace
 # setup local bte repos under packages folder
 npm run clone
 
-# install dependencies
-npm i
+# install dependencies (including workspace interdependency)
+npm i || true && npm i
 ```
 
 ### Start the development
