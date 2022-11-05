@@ -36,6 +36,12 @@
                 "REDIS_HOST": "localhost",
                 "REDIS_PORT": 6379,
                 "RESULT_CACHING": false
+            },
+            "env_dev_prodmirror": {
+                "NODE_ENV": "production",
+                "REDIS_HOST": "localhost",
+                "REDIS_PORT": 6379,
+                "API_OVERRIDE": "true"
             }
         }
     ]
