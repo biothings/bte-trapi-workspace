@@ -2,9 +2,9 @@
 > get_rev
 > ./scripts/get_rev.sh
 
-# Generated from "npm run get_rev" on  Wed Oct 19 13:57:28 EDT 2022
-https://github.com/biothings/bte-trapi-workspace.git 0fbf743 0fbf743cefb179f5c213b5c7ef0a9d9f5a4361ee
-https://github.com/biothings/BioThings_Explorer_TRAPI.git d1f8dc7 d1f8dc7a4dc2778353d06fdc4a7e14eb81122b46
+# Generated from "npm run get_rev" on  Thu Nov 10 12:33:16 EST 2022
+https://github.com/biothings/bte-trapi-workspace.git 7051463 7051463744718042f3dc9b5d13c5ad25dae0f99a
+https://github.com/biothings/BioThings_Explorer_TRAPI.git 024661f 024661fbc5a2f252dc98e7a456c57c5ed70b7ab9
 https://github.com/biothings/bte_trapi_query_graph_handler.git 7a4f2db 7a4f2db0a1792497797c14fff30ebc93782e2d9e
 https://github.com/biothings/biolink-model.js.git eeace8c eeace8c10a831c22b588faed9201d1460123958d
 https://github.com/biothings/biomedical_id_resolver.js.git b20afad b20afadc0353bf931663780ab2150956da88c4b8
