@@ -25,7 +25,6 @@ USER node
 
 RUN export GIT_REMOTE_PROTOCOL=https \
     && npm run clone \
-    && npm run git checkout temp-rollback \
     && npm i || true && npm i \
     && npm run compile \
     && npm run --silent get_rev > .current_rev \
