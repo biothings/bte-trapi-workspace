@@ -1,3 +1,5 @@
+#!/bin/bash
+
 current_folder=`pwd`
 
 while read line || [ -n "$line" ];

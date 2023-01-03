@@ -1,3 +1,5 @@
+#!/bin/bash
+
 current_folder=`pwd`
 
 echo '# Generated from "npm run get_rev" on ' $(date)

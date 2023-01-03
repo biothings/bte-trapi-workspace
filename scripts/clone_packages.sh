@@ -1,3 +1,5 @@
+#!/bin/bash
+
 current_folder=`pwd`
 remote_url=`git config --get remote.origin.url`
 echo $remote_url | grep -Eq ^https && remote_protocol="https"  || remote_protocol="git"
