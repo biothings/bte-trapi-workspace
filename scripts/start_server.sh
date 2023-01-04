@@ -1,3 +1,5 @@
+#!/bin/bash
+
 current_folder=`pwd`
 redis_available=false
 
