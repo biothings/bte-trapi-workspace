@@ -10,6 +10,9 @@
 # docker exec -ti bte-trapi sh
 FROM node:16-alpine
 ARG debug
+RUN apk update
+RUN apk add --no-cache bash
+SHELL ["/bin/bash", "-c"]
 RUN mkdir -p /home/node/app && chown -R node:node /home/node/app
 WORKDIR /home/node/app
 RUN npm i pm2 -g
