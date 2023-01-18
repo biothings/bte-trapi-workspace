@@ -61,8 +61,7 @@ pipeline {
            }
           steps {
               configFileProvider([
-                  configFile(fileId: 'values-bte.yaml', targetLocation: 'deploy/values-bte.yaml'),
-                  configFile(fileId: 'prepare.sh', targetLocation: 'prepare.sh')
+                  configFile(fileId: 'values-bte.yaml', targetLocation: 'deploy/values-bte.yaml')
               ]){
                   script {
                       sh '''
