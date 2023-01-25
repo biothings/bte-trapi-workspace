@@ -22,8 +22,8 @@ done
 
 sed -i.bak \
     -e "s/REDIS_PASSWORD_VALUE/$PASSFORREDIS/g" \
-    deploy/values-bte.yaml
-rm deploy/values-bte.yaml.bak
+    values.yaml
+rm values-bte.yaml.bak
 
 
 
