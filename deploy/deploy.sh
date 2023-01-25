@@ -9,7 +9,7 @@ toReplace=('BUILD_VERSION')
 
 secrets_json=`aws --region us-east-1 secretsmanager get-secret-value --secret-id /translator/ci/exploring-agent/bte/rediscluster | jq --raw-output .SecretString`
 
-REDIS_PASSWORD_VALUE=`echo $secrets_json | jq -r ."REDIS_PASSWORD_VALUE"`
+PASSFORREDIS=`echo $secrets_json | jq -r ."REDIS_PASSWORD_VALUE"`
 
 # replace variables in values.yaml with env vars
 for item in "${toReplace[@]}";
@@ -21,7 +21,7 @@ do
 done
 
 sed -i.bak \
-    -e "s/PASSFORREDIS/$REDIS_PASSWORD_VALUE/g" \
+    -e "s/REDIS_PASSWORD_VALUE/$PASSFORREDIS/g" \
     values.yaml
 rm configs/values.yaml.bak
 
