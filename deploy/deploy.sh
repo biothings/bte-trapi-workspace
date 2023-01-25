@@ -9,7 +9,7 @@ toReplace=('BUILD_VERSION')
 
 secrets_json=`aws --region us-east-1 secretsmanager get-secret-value --secret-id /translator/ci/exploring-agent/bte/rediscluster | jq --raw-output .SecretString`
 
-PASSFORREDIS=`echo $secrets_json | jq -r ."REDIS_PASSWORD_VALUE"`
+REDIS_PASSWORD_VALUE=`echo $secrets_json | jq -r ."REDIS_PASSWORD_VALUE"`
 
 # replace variables in values.yaml with env vars
 for item in "${toReplace[@]}";
@@ -19,6 +19,12 @@ do
       values.yaml
   rm values.yaml.bak
 done
+
+sed -i.bak \
+    -e "s/PASSFORREDIS/$REDIS_PASSWORD_VALUE/g" \
+    configs/values-bte.yaml
+rm configs/values-bte.yaml.bak
+
 
 
 # for CI, need to remove previous deployment since the taint and tolleration will only allow one deployment exists
