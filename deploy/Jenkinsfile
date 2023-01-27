@@ -60,6 +60,8 @@ pipeline {
                 label 'translator && ci && deploy'
            }
           steps {
+              cleanWs()
+              checkout scm
               configFileProvider([
                   configFile(fileId: 'values-bte.yaml', targetLocation: 'values-bte.yaml'),
                   configFile(fileId: 'prepare.sh', targetLocation: 'prepare.sh')
