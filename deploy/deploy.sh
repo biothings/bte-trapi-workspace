@@ -16,11 +16,6 @@ do
   rm values.yaml.bak
 done
 
-sed -i.bak \
-    -e "s/REDISPASS/$PASSFORREDIS/g" \
-    values-bte.yaml
-rm values-bte.yaml.bak
-
 # for CI, need to remove previous deployment since the taint and tolleration will only allow one deployment exists
 #helm -n ${namespace} uninstall ${projectName} 
 #sleep 30
