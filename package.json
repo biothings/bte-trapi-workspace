@@ -24,23 +24,23 @@
     "stop": "./scripts/stop_server.sh"
   },
   "devDependencies": {
+    "@bull-board/express": "^3.5.2",
+    "@bull-monitor/express": "^2.5.0",
     "@typescript-eslint/eslint-plugin": "^4.29.3",
     "@typescript-eslint/parser": "^4.29.3",
+    "cookie-parser": "~1.4.4",
     "eslint": "^7.32.0",
     "eslint-config-prettier": "^8.3.0",
     "eslint-plugin-prettier": "^3.4.1",
+    "http-errors": "~1.6.3",
     "lerna": "^4.0.0",
+    "morgan": "~1.9.1",
     "nodemon": "^2.0.7",
     "prettier": "^2.3.1",
+    "pug": "^3.0.2",
     "rimraf": "^3.0.2",
     "supports-color": "^7.2.0",
-    "typescript": "4.3.4",
-    "@bull-monitor/express": "^2.5.0",
-    "@bull-board/express": "^3.5.2",
-    "cookie-parser": "~1.4.4",
-    "http-errors": "~1.6.3",
-    "morgan": "~1.9.1",
-    "pug": "^3.0.2"
+    "typescript": "4.3.4"
   },
   "//devDependencies": {
     "@bull-monitor/express": "Bull monitor dependency",
@@ -50,8 +50,8 @@
     "morgan": "Bullboard dependency",
     "pug": "Bullboard dependency",
     "bull-repl": "^0.26.3 - install if needed",
-    "bull-repl-installation_option1":"install jq first, set JQ_PATH is needed; NODE_JQ_SKIP_INSTALL_BINARY=true npm install bull-repl -g",
-    "bull-repl-installation_option2":"sudo apt install autoconf libtool make; npm install bull-repl -g"
+    "bull-repl-installation_option1": "install jq first, set JQ_PATH is needed; NODE_JQ_SKIP_INSTALL_BINARY=true npm install bull-repl -g",
+    "bull-repl-installation_option2": "sudo apt install autoconf libtool make; npm install bull-repl -g"
   },
   "workspaces": [
     "./packages/@biothings-explorer/api-response-transform",
@@ -62,5 +62,8 @@
     "./packages/biomedical_id_resolver",
     "./packages/@biothings-explorer/bte-trapi",
     "./packages/@biothings-explorer/node-expansion"
-  ]
+  ],
+  "dependencies": {
+    "jest": "^29.5.0"
+  }
 }
