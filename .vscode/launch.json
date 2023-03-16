@@ -5,15 +5,20 @@
       "name": "Sync SmartAPI",
       "type": "node",
       "preLaunchTask": "build",
-      "runtimeArgs": ["run", "smartapi_sync"],
+      "runtimeArgs": [
+        "run",
+        "smartapi_sync"
+      ],
       "cwd": "${workspaceFolder}",
       "runtimeExecutable": "npm",
       "restart": false,
       "env": {
-        "DEBUG": "biomedical-id-resolver,bte*",
+        "DEBUG": "biomedical-id-resolver,bte*"
       },
       "request": "launch",
-      "skipFiles": ["<node_internals>/**"],
+      "skipFiles": [
+        "<node_internals>/**"
+      ],
       "stopOnEntry": true,
       "console": "integratedTerminal"
     },
@@ -21,7 +26,10 @@
       "name": "Sync SmartAPI (with overrides)",
       "type": "node",
       "preLaunchTask": "build",
-      "runtimeArgs": ["run", "smartapi_sync"],
+      "runtimeArgs": [
+        "run",
+        "smartapi_sync"
+      ],
       "cwd": "${workspaceFolder}",
       "runtimeExecutable": "npm",
       "restart": false,
@@ -30,7 +38,9 @@
         "API_OVERRIDE": "true"
       },
       "request": "launch",
-      "skipFiles": ["<node_internals>/**"],
+      "skipFiles": [
+        "<node_internals>/**"
+      ],
       "stopOnEntry": true,
       "console": "integratedTerminal"
     },
@@ -38,7 +48,11 @@
       "name": "Build w/o Cache",
       "type": "node",
       "preLaunchTask": "build",
-      "runtimeArgs": ["run", "debug", "--workspace=${workspaceFolder}/packages/@biothings-explorer/bte-trapi"],
+      "runtimeArgs": [
+        "run",
+        "debug",
+        "--workspace=${workspaceFolder}/packages/@biothings-explorer/bte-trapi"
+      ],
       "cwd": "${workspaceFolder}",
       "runtimeExecutable": "npm",
       "restart": false,
@@ -47,7 +61,9 @@
         "RESULT_CACHING": "false"
       },
       "request": "launch",
-      "skipFiles": ["<node_internals>/**"],
+      "skipFiles": [
+        "<node_internals>/**"
+      ],
       "stopOnEntry": true,
       "console": "integratedTerminal"
     },
@@ -55,7 +71,11 @@
       "name": "Build w/o Cache; No Threading",
       "type": "node",
       "preLaunchTask": "build and start redis",
-      "runtimeArgs": ["run", "debug", "--workspace=${workspaceFolder}/packages/@biothings-explorer/bte-trapi"],
+      "runtimeArgs": [
+        "run",
+        "debug",
+        "--workspace=${workspaceFolder}/packages/@biothings-explorer/bte-trapi"
+      ],
       "cwd": "${workspaceFolder}",
       "runtimeExecutable": "npm",
       "restart": false,
@@ -67,7 +87,9 @@
         "USE_THREADING": "false"
       },
       "request": "launch",
-      "skipFiles": ["<node_internals>/**"],
+      "skipFiles": [
+        "<node_internals>/**"
+      ],
       "stopOnEntry": true,
       "console": "integratedTerminal"
     },
@@ -75,7 +97,11 @@
       "name": "Build w/ Cache",
       "type": "node",
       "preLaunchTask": "build and start redis",
-      "runtimeArgs": ["run", "debug", "--workspace=${workspaceFolder}/packages/@biothings-explorer/bte-trapi"],
+      "runtimeArgs": [
+        "run",
+        "debug",
+        "--workspace=${workspaceFolder}/packages/@biothings-explorer/bte-trapi"
+      ],
       "cwd": "${workspaceFolder}",
       "runtimeExecutable": "npm",
       "restart": false,
@@ -88,7 +114,9 @@
         "CREATIVE_LIMIT": "1000"
       },
       "request": "launch",
-      "skipFiles": ["<node_internals>/**"],
+      "skipFiles": [
+        "<node_internals>/**"
+      ],
       "stopOnEntry": true,
       "console": "integratedTerminal"
     },
@@ -96,7 +124,11 @@
       "name": "Build w/ Cache (connect to existing)",
       "type": "node",
       "preLaunchTask": "build",
-      "runtimeArgs": ["run", "debug", "--workspace=${workspaceFolder}/packages/@biothings-explorer/bte-trapi"],
+      "runtimeArgs": [
+        "run",
+        "debug",
+        "--workspace=${workspaceFolder}/packages/@biothings-explorer/bte-trapi"
+      ],
       "cwd": "${workspaceFolder}",
       "runtimeExecutable": "npm",
       "restart": false,
@@ -109,7 +141,9 @@
         "DEBUG_COLORS": "true"
       },
       "request": "launch",
-      "skipFiles": ["<node_internals>/**"],
+      "skipFiles": [
+        "<node_internals>/**"
+      ],
       "stopOnEntry": true,
       "console": "integratedTerminal"
     },
@@ -117,7 +151,11 @@
       "name": "Build w/ Cache Cluster",
       "type": "node",
       "preLaunchTask": "build and start redis cluster",
-      "runtimeArgs": ["run", "debug", "--workspace=${workspaceFolder}/packages/@biothings-explorer/bte-trapi"],
+      "runtimeArgs": [
+        "run",
+        "debug",
+        "--workspace=${workspaceFolder}/packages/@biothings-explorer/bte-trapi"
+      ],
       "cwd": "${workspaceFolder}",
       "runtimeExecutable": "npm",
       "restart": false,
@@ -127,10 +165,12 @@
         "DEBUG": "biomedical-id-resolver,bte*",
         "SMARTAPI_SYNC": "false",
         "RESULT_CACHING": "true",
-        "REDIS_CLUSTER": "true",
+        "REDIS_CLUSTER": "true"
       },
       "request": "launch",
-      "skipFiles": ["<node_internals>/**"],
+      "skipFiles": [
+        "<node_internals>/**"
+      ],
       "stopOnEntry": true,
       "console": "integratedTerminal"
     },
@@ -138,7 +178,11 @@
       "name": "Build w/ Cache Cluster (connect to existing)",
       "type": "node",
       "preLaunchTask": "build",
-      "runtimeArgs": ["run", "debug", "--workspace=${workspaceFolder}/packages/@biothings-explorer/bte-trapi"],
+      "runtimeArgs": [
+        "run",
+        "debug",
+        "--workspace=${workspaceFolder}/packages/@biothings-explorer/bte-trapi"
+      ],
       "cwd": "${workspaceFolder}",
       "runtimeExecutable": "npm",
       "restart": false,
@@ -148,12 +192,32 @@
         "DEBUG": "biomedical-id-resolver,bte*",
         "SMARTAPI_SYNC": "false",
         "RESULT_CACHING": "true",
-        "REDIS_CLUSTER": "true",
+        "REDIS_CLUSTER": "true"
       },
       "request": "launch",
-      "skipFiles": ["<node_internals>/**"],
+      "skipFiles": [
+        "<node_internals>/**"
+      ],
       "stopOnEntry": true,
       "console": "integratedTerminal"
+    },
+    {
+      "type": "node",
+      "name": "vscode-jest-tests.v2",
+      "request": "launch",
+      "args": [
+        "--runInBand",
+        "--watchAll=false",
+        "--testNamePattern",
+        "${jest.testNamePattern}",
+        "--runTestsByPath",
+        "${jest.testFile}"
+      ],
+      "cwd": "/Users/jcallaghan/Documents/bte-trapi-workspace",
+      "console": "integratedTerminal",
+      "internalConsoleOptions": "neverOpen",
+      "disableOptimisticBPs": true,
+      "program": "/Users/jcallaghan/Documents/bte-trapi-workspace/jest"
     }
   ]
 }
