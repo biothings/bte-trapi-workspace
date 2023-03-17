@@ -61,7 +61,8 @@
     "./packages/biolink-model",
     "./packages/biomedical_id_resolver",
     "./packages/@biothings-explorer/bte-trapi",
-    "./packages/@biothings-explorer/node-expansion"
+    "./packages/@biothings-explorer/node-expansion",
+    "./packages/@biothings-explorer/bte-trapi/src/web-app"
   ],
   "dependencies": {
     "jest": "^29.5.0"
