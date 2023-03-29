@@ -5,7 +5,7 @@
             "cwd": "packages/@biothings-explorer/bte-trapi",
             "script": "./src/server.js",
     	    "exec_mode": "cluster",
-            "instances": 3,
+            "instances": 4,
             "autorestart": true,
             "exp_backoff_restart_delay": 100,
             "instance_var": "INSTANCE_ID",
